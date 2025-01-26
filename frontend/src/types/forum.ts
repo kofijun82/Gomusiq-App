@@ -16,6 +16,7 @@ export interface ForumThread {
 }
 
 export interface ForumPost {
+  duration: any;
   _id: string; // Unique identifier for the post
   content: string; // Content of the post
   thread: ForumThread; // Reference to the thread this post belongs to
