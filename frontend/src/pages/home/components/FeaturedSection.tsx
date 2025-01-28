@@ -22,22 +22,22 @@ const FeaturedSection = ({ currency }: FeaturedSectionProps) => {
 					className='flex items-center bg-zinc-800/50 rounded-md overflow-hidden
          hover:bg-zinc-700/50 transition-colors group cursor-pointer relative'
 				>
+					<PlayButton song={song} />
 					<img
 						src={song.imageUrl}
 						alt={song.title}
-						className='w-16 sm:w-20 h-16 sm:h-20 object-cover flex-shrink-0'
+						className='w-20 sm:[w-20] h-20 sm:[h-20] object-cover flex-shrink-0'
 					/>
 					<div className='flex-1 p-4'>
 						<p className='font-medium truncate'>{song.title}</p>
 						<p className='text-sm text-zinc-400 truncate'>{song.artist}</p>
-						<p className='text-sm text-zinc-300'>Price: {currency} 1.99</p>
-						<Link to="/pay" className=" text-white px-4 py-2 rounded mr-2">
+						{/* <p className='text-sm text-zinc-300'>Buy </p> */}
+						<Link to="/pay" className=" text-white  py-2 rounded ">
 						<button className='mt-2 bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-600 transition'>
-							Buy
+							Buy &#8373; 1.99
 						</button>
 						</Link>
 					</div>
-					<PlayButton song={song} />
 				</div>
 			))}
 		</div>
