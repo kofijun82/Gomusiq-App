@@ -25,13 +25,13 @@ const SearchSection = ({ currency }: SearchSectionProps) => {
 						src={song.imageUrl}
 						alt={song.title}
 						className='w-16 sm:w-20 h-16 sm:h-20 object-cover flex-shrink-0'
-					/>
+					/> 
 					<div className='flex-1 p-4'>
 						<p className='font-medium truncate'>{song.title}</p>
 						<p className='text-sm text-zinc-400 truncate'>{song.artist}</p>
-						<p className='text-sm text-zinc-300'>Price: {currency} 1.99</p>
+						{/* <p className='text-sm text-zinc-300'>Price: {currency} 1.99</p> */}
 						<button className='mt-2 bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-600 transition'>
-							Buy
+							Buy &#8373; 1.99
 						</button>
 					</div>
 					<PlayButton song={song} />

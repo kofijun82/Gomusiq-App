@@ -138,51 +138,49 @@ const AlbumPage = ({ currency }: AlbumPageProps) => {
 
 
 							<div className="relative inline-block text-left">
-      {/* Button */}
-      <button
-        onClick={toggleDropdown}
-        className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-800 hover:bg-gray-700 
-          hover:scale-105 transition-all focus:outline-none"
-        aria-expanded={isOpen}
-      >
-        <i className="bi bi-plus-circle text-white text-2xl"></i>
-      </button>
+								{/* Button */}
+								<button
+									onClick={toggleDropdown}
+									aria-expanded={isOpen}
+								>
+									<i className="bi bi-plus-circle text-white text-2xl"></i>
+								</button>
 
-      {/* Dropdown */}
-      {isOpen && (
-        <div
-          className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-zinc-900 border border-zinc-800 z-50"
-        >
-          <ul className="py-2 text-sm text-zinc-200">
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
-              >
-                Add to Playlist
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
-              >
-                Add to Favorites
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
-              >
-                Share
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
-    </div>
-						</div>
+								{/* Dropdown */}
+								{isOpen && (
+									<div
+									className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-zinc-900 border border-zinc-800 z-50"
+									>
+									<ul className="py-2 text-sm text-zinc-200">
+										<li>
+										<a
+											href="#"
+											className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
+										>
+											Add to Playlist
+										</a>
+										</li>
+										<li>
+										<a
+											href="#"
+											className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
+										>
+											Add to Favorites
+										</a>
+										</li>
+										<li>
+										<a
+											href="#"
+											className="block px-4 py-2 hover:bg-zinc-800 hover:text-white transition-colors"
+										>
+											Share
+										</a>
+										</li>
+									</ul>
+									</div>
+								)}
+								</div>
+							</div>
 
 
 
@@ -195,12 +193,12 @@ const AlbumPage = ({ currency }: AlbumPageProps) => {
 							{/* Table Header */}
 							<thead>
 								<tr className="bg-black/30 text-white">
-								<th className="px-6 py-2 text-left w-[32px]">#</th>
+								<th className="px-6 py-2 text-center w-[32px]">#</th>
 								<th className="px-6 py-2 text-left">Title</th>
 								<th className="px-6 py-2 text-center">
 									<Clock className="h-4 w-4 inline-block" />
 								</th>
-								<th className="px-6 py-2 text-right">Price</th>
+								<th className="px-6 py-2 text-center">Buy</th>
 								</tr>
 							</thead>
 
@@ -245,7 +243,7 @@ const AlbumPage = ({ currency }: AlbumPageProps) => {
 									</td>
 
 									{/* Song Price */}
-									<td className="px-6 py-2 text-right whitespace-nowrap">
+									<td className="px-6 py-2 text-center whitespace-nowrap">
 										<Button className="bg-indigo-500 text-white px-3 py-1 rounded-md hover:bg-indigo-600">
 										&#8373; 1.99
 										</Button>
